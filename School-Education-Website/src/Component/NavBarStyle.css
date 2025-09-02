@@ -1,0 +1,92 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 17px;
+    gap: 14px;
+}
+.desktop{
+    display: none;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #262626;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.hamburger{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.logoContainer{
+    background-color: #FF8D4D;
+    border-radius: 6px 0  0 6px;
+    border-right: 2px solid #262626;
+  
+}
+.logo{
+    padding:  18px 20px;
+}
+.hamburgerContainer{
+    background-color: #FFEFE5;
+    border-radius: 0 6px  6px 0;
+    border-left: 2px solid #262626;
+
+}
+.hamburger{
+    padding:  19px 20px;
+}
+.navList{
+    display: flex;
+    text-align: center;
+    background-color: #FFEFE5;
+    list-style: none;
+    padding: 20px;
+    border: 2px solid #262626;
+    border-radius: 8px;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+.navList li{
+    padding: 5px;
+    text-decoration: none;
+}
+.navList li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+@media screen and (min-width:755px){
+    .logo{
+    padding:  20px 20px;
+}
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+    .hamburgerContainer{
+        padding: 0 20px;
+    }
+    .hamburgerContainer  ul {
+        display: flex;
+        flex-direction: row;
+        gap: clamp(0.9rem, 2vw, 3rem);
+        list-style: none;
+        padding: 10px;
+    }
+    .hamburgerContainer li a{
+        text-decoration: none;
+        color: black;
+        padding: 0 0px;
+        white-space: nowrap;
+        font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+        font-family: sans-serif;
+        
+    } 
+    
+}
