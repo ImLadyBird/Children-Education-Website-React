@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway,sans-serif;
+}
+.desktop{
+ display: none;
+}
+.headerCountainr{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.headerTextContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+.headerTextContainer h3{
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    font-weight: 500;
+    color : #262626;
+    text-decoration: underline;
+}
+.headerTextContainer h1{
+    font-size: clamp(2.2rem, 2.2vw, 2.5rem);
+    font-weight: 800;
+    color: #1A1A1A;
+    line-height: 130%;
+    margin-top: 1rem;
+}
+.headerTextContainer p{
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
+    font-weight: 500;
+    line-height: 150%;
+    color: #333333;
+    margin-top: 1rem;
+    margin-bottom: 1.8rem;
+}
+.header-numbers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    box-shadow: 8px 8px 0px 1px #FFBE99;
+    background-color: #FFEFE5;
+    border-radius: 12px;
+    border: 2px solid black;
+    gap: 1rem;
+}
+.header-numbers div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.header-numbers div h2{
+    font-size: clamp(2rem, 2vw, 2.5rem);
+    color:#262626;
+    line-height: 130%;
+    font-weight: 800;
+}
+.header-numbers div p{
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    font-weight: 500;
+    line-height: 150%;
+    color: #262626;
+    text-align: center;
+}
+.orange{
+    color: #FF8D4D;
+}
+
+@media screen and (min-width:755px){
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .headerCountainr{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .headerTextContainer{
+        text-align: left;
+    }
+    .headerImageContainer {
+     width: 50%;
+    }
+    .headerImage{
+        width: 100%;
+    }
+    .headerTextContainer{
+        width: 50%;
+    }
+    .header-numbers{
+        flex-direction: row;
+        padding: 5px 9px;
+    }
+    .header-numbers div{
+        border: none;
+    }
+    .header-numbers div p{
+        white-space: nowrap;
+    }
+
+}
