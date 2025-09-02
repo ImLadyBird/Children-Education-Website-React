@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway,sans-serif;    
+}
+.TestimonialCardsContainer{
+    max-width: 1200px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin-top: 50px;
+}
+.Testmobile{
+    display: none;
+}
+
+@media screen and (min-width:755px){
+.TestimonialCardsContainer{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+}

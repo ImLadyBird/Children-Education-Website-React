@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway,sans-serif;
+}
+.sectionHeaders{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.2rem;
+}
+.sectionHeaders button{
+    background-color: #FFFFFF;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-weight: 500;
+    line-height: 150%;
+    justify-content: center;
+}
+.sectionHeaders h1{
+    font-size:clamp(2.2rem, 2.7vw, 3rem);
+    font-weight: 800;
+    line-height: 130%;
+    color: #1A1A1A;
+
+}
+.sectionHeaders p{
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    font-weight: 700;
+    line-height: 150%;
+    color: #333333;
+    text-align: center;
+}
+@media screen and (min-width:755px){
+    .sectionHeaders p{
+        max-width: 900px;
+    }
+}

@@ -1,0 +1,16 @@
+.benefitCintainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width:755px){
+    .benefitCintainer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        margin:  auto 80px;
+        
+    }
+}
