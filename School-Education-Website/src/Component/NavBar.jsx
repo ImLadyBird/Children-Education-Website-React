@@ -24,8 +24,14 @@ export function NavBar(){
                     </button>
                 </div>
                 <div className='hamburgerContainer desktop'>
+                    {/* <div><a href="#">Home</a></div>
+                    <div><a href="#">About</a></div>
+                    <div><a href="#">Academic</a></div>
+                    <div><a href="#">Admission</a></div>
+                    <div><a href="#">Student Life</a></div>
+                    <div><a href="#">Contact</a></div> */}
                    <ul>
-                     <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Academic</a></li>
                         <li><a href="#">Admission</a></li>

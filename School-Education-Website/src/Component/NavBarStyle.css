@@ -39,9 +39,10 @@ nav{
 .hamburgerContainer{
     background-color: #FFEFE5;
     border-radius: 0 6px  6px 0;
-    border-left: 2px solid #262626;
+   
 
 }
+
 .hamburger{
     padding:  19px 20px;
 }
@@ -75,24 +76,29 @@ nav{
     .desktop {
         display: block;
     }
-    .hamburgerContainer{
-        padding: 0 20px;
+    .hamburgerContainer li:hover{
+        background-color: #FF8D4D;
     }
     .hamburgerContainer  ul {
         display: flex;
         flex-direction: row;
         gap: clamp(0.9rem, 2vw, 3rem);
         list-style: none;
-        padding: 25px;
+        gap:0;
+    }
+    .hamburgerContainer li{
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        border-left: 2px solid #333; 
     }
     .hamburgerContainer li a{
         text-decoration: none;
         color: black;
-        padding: 0 0px;
+        padding: 28px 0px;
         white-space: nowrap;
         font-size: clamp(0.9rem, 1.2vw, 1.2rem);
         font-family: sans-serif;
         
     } 
-    
 }
