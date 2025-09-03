@@ -5,42 +5,48 @@
     font-family: Raleway,sans-serif;
 }
 nav{
+    
     display: flex;
     flex-direction: column;
     padding: 40px 17px;
     gap: 14px;
 }
+nav img{
+    width: 100%;
+}
 .desktop{
     display: none;
 }
 .navBar{
+    min-width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     border: 2px solid #262626;
     border-radius: 8px;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
 }
 .hamburger{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    border-left: 2px solid #262626;
 }
 .logoContainer{
+    margin: 0 0;
     background-color: #FF8D4D;
     border-radius: 6px 0  0 6px;
     border-right: 2px solid #262626;
-  
 }
 .logo{
-    padding:  18px 20px;
+    width: 100px;
+    padding:  24px 10px;
 }
 .hamburgerContainer{
     background-color: #FFEFE5;
     border-radius: 0 6px  6px 0;
-   
-
 }
 
 .hamburger{
@@ -68,13 +74,17 @@ nav{
 }
 @media screen and (min-width:755px){
     .logo{
-    padding:  20px 20px;
+    width: 140px;
+    padding: 25px 15px;
 }
     .mobile {
         display: none;
     }
     .desktop {
         display: block;
+    }
+    .navBar{
+        gap: 10px;
     }
     .hamburgerContainer li:hover{
         background-color: #FF8D4D;
@@ -95,7 +105,7 @@ nav{
     .hamburgerContainer li a{
         text-decoration: none;
         color: black;
-        padding: 28px 0px;
+        padding: 30px 0px;
         white-space: nowrap;
         font-size: clamp(0.9rem, 1.2vw, 1.2rem);
         font-family: sans-serif;
